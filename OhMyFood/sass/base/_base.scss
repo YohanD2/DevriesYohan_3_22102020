@@ -1,0 +1,11 @@
+body{
+    font-family: $font-text;
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5{
+    font-family: $font-title;
+}
+li{
+    list-style: none;
+    height: 25px;
+}

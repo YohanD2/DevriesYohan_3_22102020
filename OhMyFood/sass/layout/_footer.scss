@@ -1,0 +1,25 @@
+footer {
+background-color: #353535;
+color: white;
+padding: 0 $padding-main;
+font-size: 16px;
+line-height: 20px;
+padding-bottom:20px;
+}
+
+footer .footer__title {
+    padding : $padding-main 0;
+    & > *{
+        fill: white;
+    }
+}
+
+li.svg::before{
+    content: '';
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    margin-right:5px;
+    background : url(../img/utensils.svg) center center / contain no-repeat;
+}
+
