@@ -12,13 +12,16 @@ header{
         background: url(../img/logo.svg) center center / contain no-repeat;
     }
 }
-.header--back::before {
-    position: absolute;
-    left:15px;
-    content: '';
-    display: inline-block;
-    height:30px;
-    width:30px;
-    background : url(../img/localisation.svg) center center / contain no-repeat;
+.header--back {
+    svg{
+        height:100%;
+        margin-top: -3px;
+        padding-left: $padding-main;
+        width: 25px;
+        position: absolute;
+        top:0px;
+        left: 0px;
+        fill: black;
+    }
     }
 

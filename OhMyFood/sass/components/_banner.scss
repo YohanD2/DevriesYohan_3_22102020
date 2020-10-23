@@ -1,6 +1,16 @@
-.banner {
-    display: block;
-    height: 280px;
-    background: url('../../public/img/a_la_francaise.jpg');
-    background-size: cover;
+
+.laPlatteDuGout {
+    @include banner(url('../../public/img/la_palette_du_gout.jpg'));
+}
+
+.laNoteEnchantee {
+    @include banner(url('../../public/img/la_note_enchantee.jpg'));
+}
+
+.aLaFrancaise {
+    @include banner(url('../../public/img/a_la_francaise.jpg'));
+}
+
+.leDeliceDesSens {
+    @include banner(url('../../public/img/le_delice_des_sens.jpg'));
 }

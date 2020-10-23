@@ -1,9 +1,10 @@
 @mixin btn-operation{
     width: calc(100% - 12px);
     margin-left: auto;
-    border-radius:15px;
+    border-radius: $border-radius;
     background: #f6f6f6;
     box-shadow: $box-shadow;
+    display: block;
     &:hover{
         background: #f5edff;
         svg{
@@ -15,7 +16,7 @@
 @mixin restaurant-card{
     width: 100%;
     background: white;
-    border-radius:15px;
+    border-radius: $border-radius;
     box-shadow: $box-shadow;
 }
 
@@ -23,8 +24,15 @@
     height: 150px;
     background: $url;
     background-size: cover;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+}
+
+@mixin banner($url){
+    display: block;
+    height: 280px;
+    background: $url;
+    background-size: cover;
 }
 
 @mixin importantBtn{

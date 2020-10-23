@@ -14,12 +14,20 @@ footer .footer__title {
     }
 }
 
-li.svg::before{
+li.svgUtensils::before{
     content: '';
     display: inline-block;
-    height: 10px;
-    width: 10px;
+    height: 12px;
+    width: 15px;
     margin-right:5px;
     background : url(../img/utensils.svg) center center / contain no-repeat;
+}
+li.svgHands::before{
+    content: '';
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin-right:5px;
+    background : url(../img/hands.svg) center center / contain no-repeat;
 }
 
