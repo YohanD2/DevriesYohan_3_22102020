@@ -7,17 +7,12 @@
         padding: 25px 0;
         font-weight: bold;
     }
-    > p.svg::before{
-        content:'';
-        height: 20px;
+    svg{
+        height: 100%;
         width: 20px;
-        left:10%;
         position: absolute;
-        display: inline-block;
-        background : url(../img/localisation.svg) center center / contain no-repeat;
-        padding-right: 20px;
-        vertical-align: middle;
-        margin-top: -2px;
+        left: 12%;
+        fill: black;
     }
 }
 

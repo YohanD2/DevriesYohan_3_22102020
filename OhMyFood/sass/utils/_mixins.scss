@@ -3,9 +3,12 @@
     margin-left: auto;
     border-radius:15px;
     background: #f6f6f6;
-    box-shadow: 0px 4px 10px 2px #c9c9c9;
+    box-shadow: $box-shadow;
     &:hover{
         background: #f5edff;
+        svg{
+            fill: $color-primary;
+        }
     }
 }
 
@@ -13,5 +16,34 @@
     width: 100%;
     background: white;
     border-radius:15px;
-    box-shadow: 0px 4px 10px 2px #c9c9c9;
+    box-shadow: $box-shadow;
+}
+
+@mixin img($url) {
+    height: 150px;
+    background: $url;
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+@mixin importantBtn{
+    color :white;
+    border: none;
+    font-size: 16px;
+    height: 50px;
+    padding: 12px 17px;
+    border-radius: 50px;
+    margin-bottom: 30px;
+    background: linear-gradient(#f075da, #9c59dc);
+}
+// Mixin Restaurants Page Title 
+
+@mixin restaurantTitle{
+    display:flex;
+    justify-content: space-between;
+    h3{
+        font-size: 24px;
+        padding: 30px 0;
+    }
 }

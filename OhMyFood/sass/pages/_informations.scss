@@ -19,14 +19,7 @@
     padding: 30px;
     text-align: center;
     & button{
-        color :white;
-        border: none;
-        font-size: 16px;
-        height: 50px;
-        padding: 12px 17px;
-        border-radius: 50px;
-        margin-bottom: 30px;
-        background: linear-gradient(#f075da, #9c59dc);
+        @include importantBtn;
     }
 }
 

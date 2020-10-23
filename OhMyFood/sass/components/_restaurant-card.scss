@@ -32,31 +32,19 @@
 .restaurant-card__content__title{
     font-weight: bold;
 }
+
 #img1{
-    height: 150px;
-    background: url('../../public/img/la_palette_du_gout.jpg');
-    background-size: cover;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    @include img(url('../../public/img/la_palette_du_gout.jpg'));
 }
 #img2{
-    height: 150px;
-    background: url('../../public/img/la_note_enchantee.jpg');
-    background-size: cover;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+
+    @include img(url('../../public/img/la_note_enchantee.jpg'));
+
 }
 #img3{
-    height: 150px;
-    background: url('../../public/img/a_la_francaise.jpg');
-    background-size: cover;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    @include img(url('../../public/img/a_la_francaise.jpg'));
+
 }
 #img4{
-    height: 150px;
-    background: url('../../public/img/le_delice_des_sens.jpg');
-    background-size: cover;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    @include img(url('../../public/img/le_delice_des_sens.jpg'));
 }
