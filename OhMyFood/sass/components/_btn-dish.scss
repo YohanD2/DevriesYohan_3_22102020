@@ -5,6 +5,9 @@
     box-shadow: $box-shadow;
     margin-bottom: $padding-main;
     display:flex;
+    @include pad-only{
+        width: calc(50% - (1px * (15 / 2)));
+    }
     &:hover {
         .menu__minifycard--validate{
             width: 20%;

@@ -3,6 +3,12 @@
     @include restaurant-card;
     margin-bottom:15px;
     position: relative;
+    @include pad-only{
+        width: calc(50% - (1px * (15 / 2)));
+    }
+    @include computer-only{
+        width: calc(33% - (1px * (15 / 3)));
+    }
     &::before{
         content:'Nouveau';
         color: green;

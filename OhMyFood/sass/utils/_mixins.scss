@@ -48,10 +48,28 @@
 // Mixin Restaurants Page Title 
 
 @mixin restaurantTitle{
+    position: relative;
     display:flex;
     justify-content: space-between;
     h3{
         font-size: 24px;
         padding: 30px 0;
+    }
+}
+
+// Mixin breakpoint 
+@mixin small-only{
+    @media screen and (min-width: map-get($breakpoints, xs)){
+        @content;
+    }
+}
+@mixin pad-only{
+    @media screen and (min-width: map-get($breakpoints, sm)){
+        @content;
+    }
+}
+@mixin computer-only{
+    @media screen and (min-width: map-get($breakpoints, md)){
+        @content;
     }
 }
