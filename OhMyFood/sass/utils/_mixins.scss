@@ -56,6 +56,14 @@
         padding: 30px 0;
     }
 }
+// Anim
+@mixin spawn($delay) {
+    animation-name: spawn;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-delay: $delay;
+    animation-fill-mode: forwards;
+}
 
 // Mixin breakpoint 
 @mixin small-only{

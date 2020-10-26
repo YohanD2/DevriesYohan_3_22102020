@@ -4,11 +4,20 @@
     position: relative;
     text-align: center;
     @include pad-only{
+        margin-left: 12px;
         width: calc(50% - (1px * (15 / 2)) - 12px);
+        &:last-child{
+            margin-right:auto;
+            margin-left:auto;
+        }
     }
     @include computer-only{
+        margin-left: 0;
         width: calc(33% - (1px * (15 / 3)) - 12px);
-
+        &:last-child{
+            margin-right:0;
+            margin-left:0;
+        }
     }
     p{
         padding: 25px 0;
@@ -21,10 +30,7 @@
         left: 12%;
         fill: black;
     }
-    &:last-child{
-        margin-right:auto;
-        margin-left:auto;
-    }
+    
 }
 
 .operation__box--index{
@@ -40,6 +46,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include computer-only{
+        left: calc(50% - 12px);
+        top:-12px;
+    }
     p{
         padding: 0;
     }

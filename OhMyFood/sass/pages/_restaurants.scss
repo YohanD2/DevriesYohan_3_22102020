@@ -1,6 +1,6 @@
 
 #restaurant{
-    padding: 60px 15px;
+    padding: 60px $padding-main;
     background: #f6f6f6;
     @include small-only {
         padding: 60px 100px;
