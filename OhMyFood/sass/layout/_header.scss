@@ -22,6 +22,9 @@ header{
         top:0px;
         left: 0px;
         fill: black;
+        @include small-only{
+            padding-left: 100px;
+        }
     }
     }
 

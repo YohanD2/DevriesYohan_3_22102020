@@ -10,7 +10,7 @@ li{
     height: 28px;
 }
 
-@-webkit-keyframes hiddenn {
+@-webkit-keyframes myHidden {
     0%{
         opacity: 1;
         height: 100%;
@@ -48,8 +48,8 @@ li{
     height: 0;
     width: 100%;/* Enlver ce display */
     display: flex;
-    animation-name: hiddenn;
-    animation-duration: 8s;
+    animation-name: myHidden;
+    animation-duration: 4s;
     animation-iteration-count: 1;
     justify-content: center;
     align-items: center;

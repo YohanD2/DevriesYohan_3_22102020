@@ -4,17 +4,10 @@ main{
     margin-top: -30px;
     background: #F2F2F2;
     padding: 0 $padding-main;
-    max-width: 1031px;
     margin-left:auto;
     margin-right:auto;
     @include small-only{
         padding: 0 100px;
-    }
- 
-    @include computer-only{
-        border-radius: 30px;
-        margin: 30px auto;
-        box-shadow: $box-shadow;
     }
     .btn__container{
         text-align: center;  
