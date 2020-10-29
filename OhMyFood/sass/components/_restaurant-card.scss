@@ -36,7 +36,7 @@
     background: white;
     z-index:50;
     &:hover + .heart__full{
-    z-index:60;
+        z-index:60;
     }
 }
 #header-shape-gradient {
@@ -52,7 +52,6 @@
     fill: url(#header-shape-gradient) white;
     &:hover{
         z-index:60;
-
     }
 
 }

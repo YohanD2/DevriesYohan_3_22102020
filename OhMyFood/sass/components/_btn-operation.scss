@@ -30,7 +30,6 @@
         left: 12%;
         fill: black;
     }
-    
 }
 
 .operation__box--index{
@@ -48,7 +47,7 @@
     align-items: center;
     @include computer-only{
         left: calc(50% - 12px);
-        top:-12px;
+        top: -12px;
     }
     p{
         padding: 0;
