@@ -1,4 +1,10 @@
+.banner{
+    height: 280px;
+    width:100%;
+    object-fit: cover;
+}
 main{
+    position: relative;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     margin-top: -30px;

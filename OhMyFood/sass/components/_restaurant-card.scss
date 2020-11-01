@@ -16,9 +16,18 @@
         position: absolute;
         top:10px;
         right:10px;
-        padding:3px 6px;
+        padding:6px 12px;
         border-radius: 3px;
+        font-size: 0.7em;
+        font-weight: bold;
     }
+}
+.restaurant-card__image{
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 .restaurant-card__content{
     position: relative;
@@ -35,9 +44,7 @@
     position: absolute;
     background: white;
     z-index:50;
-    &:hover + .heart__full{
-        z-index:60;
-    }
+
 }
 #header-shape-gradient {
     --color-stop: #9356DC ;
@@ -48,26 +55,16 @@
     width: 20px;
     top: 10px;
     right: 10px;
+    z-index:60;
     position: absolute;
     fill: url(#header-shape-gradient) white;
+    opacity: 0;
+    transition-duration: 0.4s;
     &:hover{
-        z-index:60;
+        opacity: 1;
     }
 
 }
 .restaurant-card__content__title{
     font-weight: bold;
-}
-
-#img1{
-    @include img(url('../../public/img/la_palette_du_gout.jpg'));
-}
-#img2{
-    @include img(url('../../public/img/la_note_enchantee.jpg'));
-}
-#img3{
-    @include img(url('../../public/img/a_la_francaise.jpg'));
-}
-#img4{
-    @include img(url('../../public/img/le_delice_des_sens.jpg'));
 }

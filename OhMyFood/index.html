@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OhMyFood</title>
     <link rel="stylesheet" href="public/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"> 
-</head>
+    </head>
 <body>
-    <div class="loader">
-        <div class="loader__turning">
-            <div class="loader__turning--round">
-                
+    <div class="test">
+        <div class="loader">
+            <div class="loader__turning">
+                <div class="loader__turning--round"> 
+                </div>
             </div>
         </div>
     </div>
@@ -24,7 +23,7 @@
         </div>
         <div class="informations__explore">
             <p class="informations__explore--main">Réservez le menu qui vous convient</p>
-            <p class="informations__explore--secondary">Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
+            <p class="informations__explore--secondary">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
             <a href="#restaurant"><button>Explorer nos restaurants</button></a>
         </div>
     </section>
@@ -34,7 +33,8 @@
             <div class="operation__box--index">
                 <p>1</p>
             </div>
-            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="mobile-alt" class="svg-inline--fa fa-mobile-alt fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M272 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h224c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM160 480c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm112-108c0 6.6-5.4 12-12 12H60c-6.6 0-12-5.4-12-12V60c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v312z"></path></svg>            <p>Choissez un restaurant</p>
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="mobile-alt" class="svg-inline--fa fa-mobile-alt fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M272 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h224c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM160 480c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm112-108c0 6.6-5.4 12-12 12H60c-6.6 0-12-5.4-12-12V60c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v312z"></path></svg>
+            <p>Choisissez un restaurant</p>
         </a>
         <a href="#" class="operation__box">
             <div class="operation__box--index">
@@ -54,7 +54,7 @@
     <section id="restaurant">
         <p class="restaurant-title">Restaurants</p>
         <a href="lapalettedugout.html" class="restaurant-card">
-            <p id="img1" class="restaurant-card__image"></p>
+            <img class="restaurant-card__image" src="public/img/la_palette_du_gout.jpg" alt="Photo d'un plat du restaurant"/>
             <div class="restaurant-card__content">
                 <p class="restaurant-card__content__title">La palette du goût</p>
                 <p>Ménilmontant</p>
@@ -69,7 +69,7 @@
             </div>
         </a>
         <a href="lanoteenchantee.html" class="restaurant-card">
-            <p id="img2" class="restaurant-card__image"></p>
+            <img class="restaurant-card__image" src="public/img/la_note_enchantee.jpg" alt="Photo d'un plat du restaurant"/>
             <div class="restaurant-card__content">
                 <p class="restaurant-card__content__title">La note enchantée</p>
                 <p>Charonne</p>
@@ -84,9 +84,9 @@
             </div>
         </a>
         <a href="alafrancaise.html" class="restaurant-card">
-            <p id="img3" class="restaurant-card__image"></p>
+            <img class="restaurant-card__image" src="public/img/a_la_francaise.jpg" alt="Photo d'un plat du restaurant"/>
             <div class="restaurant-card__content">
-                <p class="restaurant-card__content__title">A la française</p>
+                <p class="restaurant-card__content__title">À la française</p>
                 <p>Cité Rouge</p>
                 <svg class="heart__empty" aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"></path></svg>
                 <svg class="heart__full" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><defs>
@@ -99,7 +99,7 @@
             </div>
         </a>
         <a href="ledelicedessens.html" class="restaurant-card">
-            <p id="img4" class="restaurant-card__image"></p>
+            <img class="restaurant-card__image" src="public/img/le_delice_des_sens.jpg" alt="Photo d'un plat du restaurant"/>
             <div class="restaurant-card__content">
                 <p class="restaurant-card__content__title">Le délice des sens</p>
                 <p>Folie-Méricourt</p>
@@ -127,7 +127,7 @@
         </svg>
         <ul>
             <li class="svgUtensils"><a href="#">Proposer un restaurant</a></li>
-            <li class="svgHands"><a href="#"><a href="#">Devenir partenaire</a></li>
+            <li class="svgHands"><a href="#">Devenir partenaire</a></li>
             <li><a href="#">Mentions légales</a></li>
             <li><a href="mailto:example@example.com">Contact</a></li>
         </ul>

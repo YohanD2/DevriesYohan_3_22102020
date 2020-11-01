@@ -22,21 +22,6 @@
     box-shadow: $box-shadow;
 }
 
-@mixin img($url) {
-    height: 150px;
-    background: $url;
-    background-size: cover;
-    border-top-left-radius: $border-radius;
-    border-top-right-radius: $border-radius;
-}
-
-@mixin banner($url){
-    display: block;
-    height: 280px;
-    background: $url;
-    background-size: cover;
-}
-
 @mixin importantBtn{
     color :white;
     border: none;
