@@ -8,11 +8,11 @@
         flex-wrap: wrap;
         justify-content: space-between;
     }
+    .operation__title {
+        padding-bottom: 30px;
+        font-weight: bold;
+        font-size: 22px;
+        width: 100%;
+    }
 }
 
-.operation__title {
-    padding-bottom: 30px;
-    font-weight: bold;
-    font-size: 22px;
-    width: 100%;
-}

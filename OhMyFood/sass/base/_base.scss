@@ -12,6 +12,46 @@ li{
     height: 28px;
 }
 
+@keyframes rotating {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spawn {
+    from{
+        opacity: 0;
+        margin-top:30px;
+    }
+    to{
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+@-webkit-keyframes spawn {
+    from{
+        opacity: 0;
+        margin-top:30px;
+    }
+    to{
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+
 @keyframes myHidden {
     0%{
         opacity: 1;
@@ -50,25 +90,8 @@ li{
     }
 }
 
-@keyframes rotating {
-    from{
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(360deg);
-    }
-}
-@-webkit-keyframes rotating {
-    from{
-        transform: rotate(0deg);
-        -webkit-transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(360deg);
 
-        -webkit-transform: rotate(360deg);
-    }
-}
+
 
 .loader{
     z-index: 100;

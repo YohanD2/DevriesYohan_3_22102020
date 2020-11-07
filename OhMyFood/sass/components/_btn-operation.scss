@@ -1,8 +1,33 @@
 .operation__box{
-    @include btn-operation;
+    width: calc(100% - 12px);
+    margin-left: auto;
+    border-radius: $border-radius;
+    background: #f6f6f6;
+    box-shadow: $box-shadow;
+    display: block;
     margin-bottom: 15px;
     position: relative;
     text-align: center;
+    transition-duration: 0.2s;
+    p{
+        padding: 25px 0;
+        font-weight: bold;
+    }
+    svg{
+        height: 100%;
+        width: 20px;
+        position: absolute;
+        left: 12%;
+        fill: black;
+        transition-duration: 0.2s;
+    }
+    &:hover{
+        background: #f5edff;
+        box-shadow: 0px 4px 10px 2px #9c9c9c;
+        svg{
+            fill: $color-primary;
+        }
+    }
     @include pad-only{
         margin-left: 12px;
         width: calc(50% - (1px * (15 / 2)) - 12px);
@@ -19,32 +44,21 @@
             margin-left:0;
         }
     }
-    p{
-        padding: 25px 0;
-        font-weight: bold;
-    }
-    svg{
-        height: 100%;
-        width: 20px;
-        position: absolute;
-        left: 12%;
-        fill: black;
-    }
 }
 
 .operation__box--index{
-    height: 24px;
-    width: 24px;
-    background: $color-primary;
-    color: white;
-    border-radius: 50%;
-    top: calc(50% - 12px);
-    left:-12px;
-    position: absolute;
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    top: calc(50% - 12px);
+    left:-12px;
+    height: 24px;
+    width: 24px;
+    color: white;
+    background: $color-primary;
+    border-radius: 50%;
+    text-align: center;
     @include computer-only{
         left: calc(50% - 12px);
         top: -12px;

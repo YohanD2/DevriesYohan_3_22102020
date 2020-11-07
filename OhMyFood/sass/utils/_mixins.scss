@@ -1,25 +1,30 @@
-@mixin btn-operation{
-    width: calc(100% - 12px);
-    margin-left: auto;
-    border-radius: $border-radius;
-    background: #f6f6f6;
-    box-shadow: $box-shadow;
-    display: block;
-    &:hover{
-        background: #f5edff;
-        box-shadow: 0px 4px 10px 2px #d9d9d9;
-        ;
-        svg{
-            fill: $color-primary;
-        }
-    }
-}
 
 @mixin restaurant-card{
+    display: block;
+    margin-bottom:15px;
+    position: relative;
     width: 100%;
     background: white;
     border-radius: $border-radius;
     box-shadow: $box-shadow;
+    &::before{
+        content:'Nouveau';
+        color: green;
+        background: $color-tertiary;
+        position: absolute;
+        top:10px;
+        right:10px;
+        padding:6px 12px;
+        border-radius: 3px;
+        font-size: 0.7em;
+        font-weight: bold;
+    }
+    @include pad-only{
+        width: calc(50% - (1px * (15 / 2)));
+    }
+    @include computer-only{
+        width: calc(33% - (1px * (15 / 3)));
+    }
 }
 
 @mixin importantBtn{
@@ -31,6 +36,37 @@
     border-radius: 50px;
     margin-bottom: 30px;
     background: linear-gradient($color-secondary, $color-primary);
+}
+
+@mixin minifycard {
+    margin-top: 30px;
+    opacity: 0;
+    overflow: hidden;
+    background: white;
+    border-radius: 15px;
+    box-shadow: $box-shadow;
+    margin-bottom: $padding-main;
+    display: flex;
+    @include pad-only{
+        width: calc(50% - (1px * (15 / 2)));
+        margin-top:30px;
+    }
+    &:hover {
+        .menu__minifycard--validate{
+            width: 20%;
+        }
+        svg{
+            rotate: 0deg;
+        }
+    }
+    &:focus  {
+        .menu__minifycard--validate{
+            width: 20%;
+        }
+        svg{
+            rotate: 0deg;
+        }
+    }
 }
 
 // Mixin Restaurants Page Title 

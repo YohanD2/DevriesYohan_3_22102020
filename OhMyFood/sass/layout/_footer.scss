@@ -1,19 +1,18 @@
 footer {
-background-color: #353535;
-color: white;
-padding: 0 $padding-main;
-font-size: 16px;
-line-height: 20px;
-padding-bottom:20px;
-    @include small-only{
-        padding: 0px 100px;
+    background-color: #353535;
+    color: white;
+    padding: 0 $padding-main;
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom:20px;
+    .footer__title {
+        padding : $padding-main 0;
+        & > *{
+            fill: white;
+        }
     }
-}
-
-footer .footer__title {
-    padding : $padding-main 0;
-    & > *{
-        fill: white;
+    @include small-only {
+        padding: 0px 100px;
     }
 }
 
