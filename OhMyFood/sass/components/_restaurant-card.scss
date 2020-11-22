@@ -18,33 +18,4 @@
         line-height: 1.5em;
     }
 }
-.heart__empty{
-    height: 20px;
-    width: 20px;
-    top: 10px;
-    right: 10px;
-    position: absolute;
-    background: white;
-    z-index:50;
-}
-#gradient1 {
-    --color-stop: #9356DC;
-    --color-bot: #FF79DA;
-  }
-.restaurant-card__content .heart__full{
-    height: 20px;
-    width: 20px;
-    top: 10px;
-    right: 10px;
-    z-index:60;
-    position: absolute;
-    fill: url(#gradient1) white;
-    opacity: 0;
-    transition-duration: 0.4s;
-    &:hover{
-        opacity: 1;
-    }
-    &:visited{
-        opacity: 1;
-    }
-}
+

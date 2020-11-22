@@ -21,6 +21,13 @@ main{
     button{
         @include importantBtn;
         margin-bottom: 50px;
+        :hover{
+            box-shadow: $box-shadow;
+    
+        }
+        :focus{
+            box-shadow: $box-shadow;
+        }
     }
 }
 

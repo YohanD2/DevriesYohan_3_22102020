@@ -1,8 +1,13 @@
 header{
+    
+   
+}
+.header__content{
     text-align: center;
     padding: 20px 0;
     position: relative;
     box-shadow: 0 0 6px grey;
+    height: 30px;
     &::after{
         content: '';
         display: inline-block;
@@ -11,6 +16,7 @@ header{
         background: url(../img/logo.svg) center center / contain no-repeat;
     }
 }
+
 .header-back {
     svg{
         height:100%;

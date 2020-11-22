@@ -23,13 +23,20 @@
     left: 0;
     top: 20px;
 }
-.main__title--like{
-    height: 30px;
+.main__title svg{
+    background: #F2F2F2;
     width: 30px;
-    position: absolute;
-    margin: 28px 15px 0px 0px;
+    height: 100%;
     right: 0px;
+    top: 0px;
+    border-radius: 30px;
 }
 .order{
     cursor: pointer;
+}
+.order:hover{
+    box-shadow : $box-shadow
+}
+.order:focus{
+    box-shadow : $box-shadow
 }
