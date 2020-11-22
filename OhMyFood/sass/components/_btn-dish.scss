@@ -54,7 +54,8 @@
         fill: white;
         height:25px;
         width: 25px;
-        rotate: -180deg;
+        -webkit-transform: rotate(-180deg);
+        transform: rotate(-180deg);
         transition-duration: 0.4s;
 
     }
