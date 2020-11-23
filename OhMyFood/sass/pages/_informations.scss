@@ -20,7 +20,7 @@
     h1{
         font-family: $font-text;
     }
-    & button{
+    & a{
         @include importantBtn;
         cursor: pointer;
     }
@@ -37,6 +37,7 @@
     margin-bottom: 30px;
 }
 
-.informations__explore button:hover, .informations__explore button:focus{
+.informations__explore .informations__explore--btn:hover,
+.informations__explore .informations__explore--btn:focus{
     box-shadow: $box-shadow;
 }
